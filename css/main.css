@@ -3,6 +3,7 @@
 }
 
 body {
+	margin: auto;
 	font-family: Titillium Web, sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-weight: 300;
@@ -13,10 +14,32 @@ body {
 /*Wrapper for content that should have space on sides*/
 .content-container {
 	margin: 20px 5% 0 5%;
-	max-width: 1200px;
 }
 
 /* Responsive images */
+img {
+	opacity: 1;
+	transition: all 0.3s ease-in-out;
+/*	position: relative;*/
+}
+
+.hidden_text {
+	display: none;
+	font-size: 50px;
+	z-index: 500;
+	/*position: absolute;*/
+}
+
+img:hover {
+	opacity: 0.4;
+}
+
+
+
+img:hover .hidden_text {
+	display: block;
+}
+
 .large img {
 	max-width: 100%;
     height: auto;
@@ -104,7 +127,6 @@ nav {
 	display: inline-flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	max-width: 1200px;
 	max-height: 600px;
 }
 
@@ -149,6 +171,9 @@ a:hover {
 	text-decoration: none;
 }
 
+h1 a, nav a:hover {
+	transform: translateY(-3px);
+}
 
 
 
