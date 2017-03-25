@@ -79,7 +79,6 @@ nav {
 .small {
 	width: 31%;
 	margin-bottom: 10px;
-	/*height: 600px;*/
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -155,14 +154,34 @@ footer {
 
 
 @media screen and (max-width: 770px) {
-	.column_grid {
-		width: 49%;
+	.large {
+		width: 100%;
 	}
+	.small {
+		width: 100%;
+		height: auto;
+		display: inline-block;
+	}
+	#small {
+		width: 49.7%;
+		height: auto;
+	}
+
 }
 
-@media screen and (max-width: 440px) {
-	.column_grid {
-		width: 99%;
+@media screen and (max-width: 590px) {
+	.large {
+		width: 100%;
+	}
+	.small {
+		width: 100%;
+		height: 100%;
+		/*display: inline-block;*/
+	}
+	#small {
+		width: 100%;
+		height: auto;
+		margin-bottom: 10px;
 	}
 }
 
