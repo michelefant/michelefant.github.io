@@ -68,7 +68,9 @@ img:hover .hidden_text {
 }
 
 h2 {
-	font-size: 12px;
+	font-family: dosis, sans-serif;
+	font-weight: 500;
+	font-size: 16px;
 }
 
 nav {
@@ -277,6 +279,30 @@ footer {
 	}
 }
 
+/* portfolio layout */
+.column-3 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
 
+.column-3 img {
+	width: 33%;
+	height: 100%;
+}
 
+.column-2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.column-2 img {
+	width: 49.5%;
+	height: 100%;
+}
+
+.hr_portfolio {
+	margin-bottom: 1%;
+}
 
