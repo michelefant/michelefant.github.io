@@ -16,6 +16,10 @@ body {
 	margin: 20px 5% 0 5%;
 }
 
+hr {
+	border: none;
+	margin: 50px 40%;
+}
 /* Responsive images */
 img {
 	opacity: 1;
@@ -180,10 +184,7 @@ h1 a, nav a:hover {
 
 
 /* Footer */
-hr {
-	margin: 50px 40%;
-	border-color: red;
-}
+
 
 footer {
 	font-family: Titillium Web, sans-serif;
