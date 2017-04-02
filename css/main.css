@@ -27,27 +27,72 @@ img {
 /*	position: relative;*/
 }
 
-.hidden_text {
-	display: none;
-	font-size: 50px;
-	z-index: 500;
-	/*position: absolute;*/
-}
-
-img:hover {
-	opacity: 0.4;
-}
-
-
-
-img:hover .hidden_text {
-	display: block;
-}
-
 .large img {
 	max-width: 100%;
     height: auto;
 }
+
+.overlay-wrapper {
+	width: auto;
+	height: auto;
+	margin: 0;
+
+	overflow: hidden;
+	position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255, 255, 255, .9);
+  color: black;
+  font-size: 30px;
+  font-family: dosis, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-small {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(255, 255, 255, .9);
+  color: black;
+  font-family: dosis, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay-wrapper .overlay .overlay-small {
+	opacity: 0;
+	transition: all .3s ease-in-out;
+}
+
+.overlay-wrapper:hover .overlay {
+	opacity: 1;
+}
+
+.overlay-wrapper:hover .overlay-small {
+	opacity: 1;
+}
+
 
 #name {
 	font-family: dosis, sans-serif;
