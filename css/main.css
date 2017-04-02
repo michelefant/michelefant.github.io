@@ -53,28 +53,8 @@ img {
   transition: .5s ease;
   background-color: rgba(255, 255, 255, .9);
   color: black;
-  font-size: 30px;
+  font-size: 25px;
   font-family: dosis, sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.overlay-small {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(255, 255, 255, .9);
-  color: black;
-  font-family: dosis, sans-serif;
-  font-weight: 500;
-  font-size: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -109,7 +89,6 @@ img {
 	margin: 20px 5% 0 5%;
 	font-size: 30px;
 	letter-spacing: 1px;
-	padding: 0 15px;
 }
 
 h2 {
@@ -194,7 +173,6 @@ nav {
 
 .bodycopy {
 	margin: 20px 5% 0 5%;
-	padding: 0 15px;
 }
 
 #small {
@@ -227,8 +205,50 @@ h1 a, nav a:hover {
 	transform: translateY(-3px);
 }
 
+.back {
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
 
-
+.back a {
+	color: black;
+	cursor: pointer;
+	display: block;
+	position: relative;
+	border: 2px solid black;
+	margin-top: 100px;
+	margin-bottom: 70px;
+	padding: 10px 40px;
+	letter-spacing: 2px;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
+.back a:hover {
+	color: red !important;
+	background-color: transparent;
+	text-shadow: nthree;
+}
+.back a:hover:before {
+	left: 0%;
+	right: auto;
+	width: 100%;
+}
+.back a:before {
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 100%;
+	width: 0px;
+	z-index: -1;
+	content: '';
+	color: #000 !important;
+	background: #000;
+	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+0s;
+}
 
 /* Footer */
 
@@ -275,7 +295,7 @@ footer {
 
 /* Responsive */
 
-@media screen and (max-width: 770px) {
+/*@media screen and (max-width: 770px) {
 	.hamburger .line {
 		display: block;
 		position: relative;
@@ -290,15 +310,15 @@ footer {
 		display: inline-block;
 	}
 	#small {
-		width: 49.7%;
+		width: 45%;
 		height: auto;
 	}
 	#headshot {
 		width: 100%;
 	}
-}
+}*/
 
-@media screen and (max-width: 590px) {
+@media screen and (max-width: 650px) {
 /*	.wrap {
 		display: flex;
 		flex-wrap: wrap;
@@ -319,7 +339,7 @@ footer {
 	}
 	#small {
 		width: 100%;
-		height: auto;
+		/*height: 100%;*/
 		margin-bottom: 10px;
 	}
 }
