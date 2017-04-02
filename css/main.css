@@ -18,7 +18,7 @@ body {
 
 hr {
 	border: none;
-	margin: 50px 40%;
+	margin: 100px 40%;
 }
 /* Responsive images */
 img {
@@ -80,7 +80,9 @@ img {
 	font-weight: 500;
 	letter-spacing: 3px;
 	font-size: 30px;
+	text-transform: uppercase;
 }
+
 
 .title {
 	font-family: dosis, sans-serif;
@@ -91,11 +93,28 @@ img {
 	letter-spacing: 1px;
 }
 
-h2 {
+
+
+h2{
+	font-family: dosis, sans-serif;
+	font-weight: 500;
+	font-size: 16px;	
+}
+
+.animation-copy {
 	font-family: dosis, sans-serif;
 	font-weight: 500;
 	font-size: 16px;
+	white-space: nowrap;
+  	overflow: hidden;
+  	width: 30em;
+	animation: type 1s steps(60, end);
 }
+
+@keyframes type{ 
+  from { width: 0; } 
+}
+
 
 nav {
 	display: flex;
