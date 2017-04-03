@@ -294,7 +294,12 @@ h3 {
 }
 
 .poster img {
-	width: 32%;
+	width: 33%;
+}
+
+#email {
+	color: red;
+	font-size: 15px;
 }
 
 /* Video */
