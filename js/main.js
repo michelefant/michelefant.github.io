@@ -1,13 +1,19 @@
-// When mouse over #name, 
-	// MICHELLE TANG expand to MENGSHUANG MICHELLE TANG
-	// h2 slide down
-
-// When mouse over cover img
-	// opacity of the img become 40% (already did it in CSS)
-	// .hidden_text shows up in the middle of the img one line after another
-
 
 $(document).ready(function(){
+  $('.hamburger').on('click', function (event) {
+    event.preventDefault();
+    $('nav').toggleClass('active');
+    // $('nav').slideToggle(350, function(){
+    //   console.log('here')
+    //    $('nav').add('display','block !important');
+    // });
+    // when screen is more than 650 then we want the to nav display block 
+    // $('nav').css('display','block');
+    // $('nav').toggleClass('hidden');
+
+});
+
+
   
   var $randomnbr = $('.nbr');
   var $timer= 6;
